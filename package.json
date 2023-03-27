@@ -1,0 +1,24 @@
+{
+  "name": "react-basic-projects",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "workspaces": [
+    "01-birthday-reminder"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:01-birthday-reminder": "npm workspace 01-birthday-reminder run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nou0983/React-Basic-Projects.git"
+  },
+  "author": "minsu jung",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nou0983/React-Basic-Projects/issues"
+  },
+  "homepage": "https://github.com/nou0983/React-Basic-Projects#readme"
+}
