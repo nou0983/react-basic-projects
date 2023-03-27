@@ -5,11 +5,13 @@
   "main": "index.js",
   "private": true,
   "workspaces": [
-    "01-birthday-reminder"
+    "01-birthday-reminder",
+    "02-tours"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:01-birthday-reminder": "npm workspace 01-birthday-reminder run build"
+    "build:01-birthday-reminder": "npm workspace 01-birthday-reminder run build",
+    "build:02-tours": "npm workspace 02-tours run build"
   },
   "repository": {
     "type": "git",
