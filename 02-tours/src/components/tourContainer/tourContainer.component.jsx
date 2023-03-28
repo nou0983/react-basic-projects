@@ -54,7 +54,7 @@ const TourContainer = () => {
         <p className="error-message">There was a problem while fetching data from the server. Please try again later.</p>
       ) : (
         <ul className="tour-list">
-          {tours.map((tour) => {
+          {tours.length <= 0 ? "There is no tours available." : tours.map((tour) => {
             return <TourCard key={tour.id} {...tour} removeTour={removeTour} />;
           })}
         </ul>

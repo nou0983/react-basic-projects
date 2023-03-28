@@ -11,7 +11,7 @@ const TourCard = ({ id, name, info, price, image, removeTour }) => {
       <div className="tour-details">
         <h2>{name}</h2>
         <p>
-          {showMore ? info : info.substring(0, 200) + "..."}{" "}
+          {showMore ? info : `${info.substring(0, 200)} ...`}{" "}
           <button
             type="button"
             className="btn-show"
