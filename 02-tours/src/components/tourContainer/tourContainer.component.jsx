@@ -5,7 +5,7 @@ import "./tourContainer.styles.css";
 
 const TourContainer = () => {
   const URL = "https://course-api.com/react-tours-project";
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
   const [tours, setTours] = useState([]);
   const [error, setError] = useState(false);
 
@@ -15,6 +15,8 @@ const TourContainer = () => {
   };
 
   const fetchData = async () => {
+    setIsLoading(true);
+
     try {
       const data = await fetch(URL).then((res) => {
         if (res.status >= 300 || res.status < 200) {
@@ -26,12 +28,12 @@ const TourContainer = () => {
       });
 
       setTours(data);
-      setIsLoading(false);
     } catch (error) {
       console.log(error);
       setError(true);
-      setIsLoading(false);
     }
+
+    setIsLoading(false);
   };
 
   useEffect(() => {
@@ -51,10 +53,24 @@ const TourContainer = () => {
       <h1>our tours</h1>
       <hr />
       {error ? (
-        <p className="error-message">There was a problem while fetching data from the server. Please try again later.</p>
+        <p className="error-message">
+          There was a problem while fetching data from the server. Please try
+          again later.
+        </p>
+      ) : tours.length <= 0 ? (
+        <div className="error-message-container">
+          <p className="error-message">There is no tours available.</p>
+          <button
+            type="button"
+            className="btn-delete btn-refresh"
+            onClick={fetchData}
+          >
+            refresh
+          </button>
+        </div>
       ) : (
         <ul className="tour-list">
-          {tours.length <= 0 ? "There is no tours available." : tours.map((tour) => {
+          {tours.map((tour) => {
             return <TourCard key={tour.id} {...tour} removeTour={removeTour} />;
           })}
         </ul>

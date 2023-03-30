@@ -53,11 +53,9 @@ button {
 .btn-delete {
   border: 1px solid #10b981;
   background-color: transparent;
-  display: block;
   width: 100%;
   padding: 1rem 0;
   border-radius: 3px;
-
   color: #10b981;
   box-shadow: 0 1px 5px #ccc;
   transition: 0.2s linear;
@@ -67,6 +65,10 @@ button {
 .btn-delete:hover {
   color: #fff;
   background-color: #10b981;
+}
+
+.btn-refresh {
+  width: 30%;
 }
 
 /* *************************************** */

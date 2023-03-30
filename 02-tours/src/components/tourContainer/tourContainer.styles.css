@@ -24,6 +24,10 @@ hr {
   border: none;
 }
 
+.error-message-container {
+  text-align: center;
+}
+
 .error-message {
   text-align: center;
 }
