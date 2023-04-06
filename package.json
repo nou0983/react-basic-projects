@@ -6,12 +6,14 @@
   "private": true,
   "workspaces": [
     "01-birthday-reminder",
-    "02-tours"
+    "02-tours",
+    "03-reviews"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:01-birthday-reminder": "npm workspace 01-birthday-reminder run build",
-    "build:02-tours": "npm workspace 02-tours run build"
+    "build:02-tours": "npm workspace 02-tours run build",
+    "build:03-reviews": "npm workspace 03-reviews run build"
   },
   "repository": {
     "type": "git",
