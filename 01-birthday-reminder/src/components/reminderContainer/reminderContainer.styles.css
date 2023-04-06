@@ -1,0 +1,40 @@
+.container {
+  width: 30%;
+  min-width: 400px;
+  margin: 15vh auto 0;
+  padding: 4rem;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 0 20px #ccc;
+}
+
+h1 {
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+ul {
+  margin: 2rem 0;
+}
+
+button {
+  border: none;
+  color: #fff;
+  background-color: #d946ef;
+  text-transform: capitalize;
+  display: block;
+  width: 100%;
+  padding: 2rem 0;
+  font-size: 1.8rem;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #a21caf;
+}
+
+h1,
+button {
+  letter-spacing: 2px;
+}
