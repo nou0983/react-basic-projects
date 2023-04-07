@@ -7,13 +7,15 @@
   "workspaces": [
     "01-birthday-reminder",
     "02-tours",
-    "03-reviews"
+    "03-reviews",
+    "04-accordion"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:01-birthday-reminder": "npm workspace 01-birthday-reminder run build",
     "build:02-tours": "npm workspace 02-tours run build",
-    "build:03-reviews": "npm workspace 03-reviews run build"
+    "build:03-reviews": "npm workspace 03-reviews run build",
+    "build:04-accordion": "npm workspace 04-accordion run build"
   },
   "repository": {
     "type": "git",
