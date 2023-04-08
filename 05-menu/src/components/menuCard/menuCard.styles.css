@@ -1,0 +1,59 @@
+.menu-card {
+  flex-basis: 30%;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+img {
+  width: 100%;
+  height: 25rem;
+  object-fit: cover;
+  border-radius: 2px 2px 0 0;
+}
+
+.header {
+  padding: 2rem;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  line-height: 1.5;
+  color: #777;
+}
+
+/* *************************************** */
+/* Media Style */
+/* *************************************** */
+/* Default work done at 2560px */
+
+/* Extra Large 1729px ~ 1920px */
+@media only screen and (max-width: 1920px) {
+}
+
+/* Large laptop to Desktop: 1324px ~ 1728px */
+@media only screen and (max-width: 1728px) {
+}
+
+/* Medium Tablet to Laptop: 848px ~ 1323px */
+@media only screen and (max-width: 1323px) {
+}
+
+/* Small Phone to Tablet: 403px ~ 847px */
+@media only screen and (max-width: 847px) {
+  .menu-card {
+    flex-basis: 46%;
+  }
+}
+
+/* Extra small phone to Phone: 0px ~ 402px */
+@media only screen and (max-width: 402px) {
+  .menu-card {
+    flex-basis: 80%;
+  }
+}
