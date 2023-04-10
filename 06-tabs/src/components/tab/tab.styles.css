@@ -1,0 +1,13 @@
+button {
+  border: none;
+  background-color: transparent;
+  transition: 0.2s linear;
+  font-size: 1.8rem;
+  cursor: pointer;
+  border-left: transparent solid 2px;
+}
+
+button:hover, .tab-selected {
+  color: #14b8a6;
+  border-left-color: #14b8a6;
+}

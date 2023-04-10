@@ -28,5 +28,8 @@
   "bugs": {
     "url": "https://github.com/nou0983/React-Basic-Projects/issues"
   },
-  "homepage": "https://github.com/nou0983/React-Basic-Projects#readme"
+  "homepage": "https://github.com/nou0983/React-Basic-Projects#readme",
+  "dependencies": {
+    "react-icons": "^4.8.0"
+  }
 }

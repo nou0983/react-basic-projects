@@ -1,0 +1,77 @@
+.info-container {
+  flex-basis: 80%;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 3.5rem;
+  letter-spacing: 1.5;
+}
+
+h2 {
+  font-size: 2rem;
+  display: inline-block;
+  background-color: #cbd5e1;
+  padding: 1rem 2rem;
+  border-radius: 2px;
+  margin: 1rem 0;
+}
+
+h3 {
+  color: #888;
+}
+
+ul {
+  margin-top: 3rem;
+  list-style: none;
+}
+
+li {
+  display: flex;
+  align-items: center;
+}
+
+li:not(:last-of-type) {
+  margin-bottom: 1.5rem;
+} 
+
+svg {
+  color: #14b8a6;
+  font-size: 2rem;
+  margin-right: 1.5rem;
+  flex-basis: 5%;
+}
+
+p {
+  flex-basis: 95%;
+}
+
+/* *************************************** */
+/* Media Style */
+/* *************************************** */
+/* Default work done at 2560px */
+
+/* Extra Large 1729px ~ 1920px */
+@media only screen and (max-width: 1920px) {
+}
+
+/* Large laptop to Desktop: 1324px ~ 1728px */
+@media only screen and (max-width: 1728px) {
+}
+
+/* Medium Tablet to Laptop: 848px ~ 1323px */
+@media only screen and (max-width: 1323px) {
+}
+
+/* Small Phone to Tablet: 403px ~ 847px */
+@media only screen and (max-width: 847px) {
+}
+
+/* Extra small phone to Phone: 0px ~ 402px */
+@media only screen and (max-width: 402px) {
+}

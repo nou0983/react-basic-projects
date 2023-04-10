@@ -1,0 +1,102 @@
+/* ------------------------------------------------ */
+/* Global Styles */
+/* ------------------------------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font: 1.6rem sans-serif;
+  color: #343a40;
+  background-color: #f8fafc;
+}
+
+section {
+  width: 50%;
+  max-width: 1500px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 8rem;
+  font-size: 5rem;
+}
+
+h1,
+h2,
+button {
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+hr {
+  margin: 1rem auto 3rem;
+  width: 10rem;
+  border: none;
+  height: 0.5rem;
+  background-color: #f59e0b;
+}
+
+/* *************************************** */
+/* Media Style */
+/* *************************************** */
+/* Default work done at 2560px */
+
+/* Extra Large 1729px ~ 1920px */
+@media only screen and (max-width: 1920px) {
+  html {
+    font-size: 58%;
+  }
+
+  section {
+    width: 65%;
+  }
+}
+
+/* Large laptop to Desktop: 1324px ~ 1728px */
+@media only screen and (max-width: 1728px) {
+  html {
+    font-size: 56%;
+  }
+
+  section {
+    width: 80%;
+  }
+}
+
+/* Medium Tablet to Laptop: 848px ~ 1323px */
+@media only screen and (max-width: 1323px) {
+  html {
+    font-size: 53%;
+  }
+
+  section {
+    width: 85%;
+  }
+}
+
+/* Small Phone to Tablet: 403px ~ 847px */
+@media only screen and (max-width: 847px) {
+  html {
+    font-size: 50%;
+  }
+
+  section {
+    width: 90%;
+  }
+}
+
+/* Extra small phone to Phone: 0px ~ 402px */
+@media only screen and (max-width: 402px) {
+  html {
+    font-size: 48%;
+  }
+}

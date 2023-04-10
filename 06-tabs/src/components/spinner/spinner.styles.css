@@ -1,0 +1,15 @@
+.spinner {
+  margin: 20vh auto 0;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100%;
+  border: 3px solid #ccc;
+  border-top-color: #999;
+  animation: loadingIcon 1s linear infinite;
+}
+
+@keyframes loadingIcon {
+  100% {
+    transform: rotate(360deg);
+  }
+}

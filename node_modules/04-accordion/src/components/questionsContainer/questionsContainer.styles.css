@@ -1,0 +1,53 @@
+.container {
+  width: 30%;
+  max-width: 1000px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px #ccc;
+  background-color: #fff;
+  padding: 6rem 4rem;
+  letter-spacing: 1px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4.7rem;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+/* *************************************** */
+/* Media Style */
+/* *************************************** */
+/* Default work done at 2560px */
+
+/* Extra Large 1729px ~ 1920px */
+@media only screen and (max-width: 1920px) {
+}
+
+/* Large laptop to Desktop: 1324px ~ 1728px */
+@media only screen and (max-width: 1728px) {
+}
+
+/* Medium Tablet to Laptop: 848px ~ 1323px */
+@media only screen and (max-width: 1323px) {
+  .container {
+    width: 50%;
+  }
+}
+
+/* Small Phone to Tablet: 403px ~ 847px */
+@media only screen and (max-width: 847px) {
+  .container {
+    width: 70%;
+  }
+}
+
+/* Extra small phone to Phone: 0px ~ 402px */
+@media only screen and (max-width: 402px) {
+  .container {
+    width: 85%;
+  }
+}
