@@ -1,0 +1,139 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 6rem;
+  opacity: 0;
+  transition: 0.3s linear;
+}
+
+.container-active {
+  opacity: 1;
+}
+
+.container-prev {
+  left: -100%;
+}
+
+.container-next {
+  left: 100%;
+}
+
+.image-container {
+  width: 7vw;
+  height: 7vw;
+  min-width: 110px;
+  min-height: 110px;
+  border-radius: 100%;
+  position: relative;
+}
+
+.image-container::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 100%;
+  transform: scale(1.03);
+  background-color: rgba(100, 92, 255, 0.5);
+  box-shadow: 0 0 15px #ccc;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+h2,
+h3 {
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  color: #8b5cf6;
+}
+
+h3 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  margin: 1rem 0 3rem;
+}
+
+p {
+  text-align: center;
+  line-height: 2;
+  color: #777;
+  margin-bottom: 1.5rem;
+}
+
+span {
+  display: inline-block;
+  color: #8b5cf6;
+  font-size: 3.5rem;
+}
+
+button {
+  border: none;
+  background-color: #64748b;
+  cursor: pointer;
+  color: #fff;
+  position: absolute;
+  font-size: 4rem;
+  top: 50%;
+  padding: 0.5rem;
+}
+
+button:first-of-type {
+  left: 0;
+}
+
+button:last-of-type {
+  right: 0;
+}
+
+svg {
+  vertical-align: -0.6rem;
+}
+
+/* *************************************** */
+/* Media Style */
+/* *************************************** */
+/* Default work done at 2560px */
+
+/* Extra Large 1729px ~ 1920px */
+@media only screen and (max-width: 1920px) {
+}
+
+/* Large laptop to Desktop: 1324px ~ 1728px */
+@media only screen and (max-width: 1728px) {
+}
+
+/* Medium Tablet to Laptop: 848px ~ 1323px */
+@media only screen and (max-width: 1323px) {
+ 
+}
+
+/* Small Phone to Tablet: 403px ~ 847px */
+@media only screen and (max-width: 847px) {
+
+}
+
+/* Extra small phone to Phone: 0px ~ 402px */
+@media only screen and (max-width: 402px) {
+ 
+}

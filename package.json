@@ -10,7 +10,8 @@
     "03-reviews",
     "04-accordion",
     "05-menu",
-    "06-tabs"
+    "06-tabs",
+    "07-slider"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -19,7 +20,8 @@
     "build:03-reviews": "npm workspace 03-reviews run build",
     "build:04-accordion": "npm workspace 04-accordion run build",
     "build:05-menu": "npm workspace 05-menu run build",
-    "build:06-tabs": "npm workspace 06-tabs run build"
+    "build:06-tabs": "npm workspace 06-tabs run build",
+    "build:07-slider": "npm workspace 07-slider run build"
   },
   "repository": {
     "type": "git",
