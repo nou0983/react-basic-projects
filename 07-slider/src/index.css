@@ -24,6 +24,7 @@ section {
   height: 30vh;
   margin: 25vh auto;
   position: relative;
+  overflow: hidden;
 }
 
 /* *************************************** */
