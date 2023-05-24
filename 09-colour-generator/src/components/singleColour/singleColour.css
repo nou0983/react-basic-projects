@@ -1,0 +1,14 @@
+.color {
+  width: 20%;
+  padding: 2rem;
+  cursor: pointer;
+  transition: 0.1s linear;
+}
+
+.color:hover {
+  transform: scale(1.05);
+}
+
+.color-light {
+  color: #fff;
+}

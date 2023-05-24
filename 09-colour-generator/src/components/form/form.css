@@ -1,0 +1,39 @@
+.form-container,
+form {
+  display: flex;
+}
+
+.form-container {
+  align-items: center;
+  gap: 3rem;
+  padding: 3rem;
+  text-transform: capitalize;
+}
+
+form > * {
+  border: none;
+  background-color: #fff;
+}
+
+input[type="color"] {
+  height: auto;
+}
+
+input[type="text"] {
+  color: #bbb;
+  font-size: 1.8rem;
+  padding: 1.5rem;
+}
+
+button {
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 1.8rem;
+  padding: 1rem;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+}
+
+.color-dark {
+  color: inherit;
+}
