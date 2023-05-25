@@ -12,7 +12,8 @@
     "05-menu",
     "06-tabs",
     "07-slider",
-    "08-lorem-ipsum"
+    "08-lorem-ipsum",
+    "09-color-generator"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -23,7 +24,8 @@
     "build:05-menu": "npm workspace 05-menu run build",
     "build:06-tabs": "npm workspace 06-tabs run build",
     "build:07-slider": "npm workspace 07-slider run build",
-    "build:08-lorem-ipsum": "npm workspace 08-lorem-ipsum run build"
+    "build:08-lorem-ipsum": "npm workspace 08-lorem-ipsum run build",
+    "build:09-color-generator": "npm workspace 09-color-generator run build"
   },
   "repository": {
     "type": "git",
