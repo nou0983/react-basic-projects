@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./form.css";
 
 const Form = ({ updateColor }) => {
-  const [color, setColor] = useState("#006432");
+  const [color, setColor] = useState("#87ceeb");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -39,6 +39,7 @@ const Form = ({ updateColor }) => {
           submit
         </button>
       </form>
+    
     </section>
   );
 };

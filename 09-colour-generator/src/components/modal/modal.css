@@ -1,0 +1,22 @@
+.modal {
+  width: 30%;
+  padding: 10rem 5rem;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  text-align: center;
+  border-radius: 3px;
+  font-size: 2rem;
+}
+
+.btn-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  border: none;
+  background-color: transparent;
+  font-size: 4rem;
+  color: #bb2525;
+}
