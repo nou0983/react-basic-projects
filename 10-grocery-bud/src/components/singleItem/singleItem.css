@@ -1,0 +1,31 @@
+li {
+  list-style: none;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+li:not(:last-of-type) {
+  margin-bottom: 1.5rem;
+}
+
+li.empty {
+  justify-content: center;
+  margin: 5rem 0;
+}
+
+span {
+  cursor: pointer;
+}
+
+span.completed {
+  text-decoration: line-through;
+  opacity: 0.8;
+}
+
+button[type="button"] {
+  flex-basis: 20%;
+  padding: 0.5rem;
+  background-color: #bb2525;
+}

@@ -1,0 +1,84 @@
+section {
+  max-width: 1000px;
+  width: 25%;
+  margin: 25vh auto;
+  background-color: #fff;
+  box-shadow: 0 0 10px #ddd;
+  border-radius: 3px;
+  padding: 5rem;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 400;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  font-size: 3.5rem;
+}
+
+form {
+  margin: 2rem 0;
+  display: flex;
+}
+
+input {
+  flex-basis: 65%;
+  border: none;
+  border: 1px solid #ccc;
+  border-radius: 3px 0 0 3px;
+  padding: 1rem;
+  background-color: #f8fafc;
+  font-size: 1.8rem;
+}
+
+button {
+  flex-basis: 35%;
+  border: none;
+  background-color: #87ceeb;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 1.8rem;
+  cursor: pointer;
+  border-radius: 0 3px 3px 0;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* *************************************** */
+/* Media Style */
+/* *************************************** */
+/* Default work done at 2560px */
+
+/* Extra Large 1729px ~ 1920px */
+@media only screen and (max-width: 1920px) {
+  section {
+    width: 35%;
+  }
+}
+
+/* Large laptop to Desktop: 1324px ~ 1728px */
+@media only screen and (max-width: 1728px) {
+}
+
+/* Medium Tablet to Laptop: 848px ~ 1323px */
+@media only screen and (max-width: 1323px) {
+  section {
+    width: 50%;
+  }
+}
+
+/* Small Phone to Tablet: 403px ~ 847px */
+@media only screen and (max-width: 847px) {
+  section {
+    width: 85%;
+  }
+}
+
+/* Extra small phone to Phone: 0px ~ 402px */
+@media only screen and (max-width: 402px) {
+  section {
+    width: 95%;
+  }
+}
