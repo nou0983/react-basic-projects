@@ -24,10 +24,20 @@ const GroceryContainer = () => {
     e.preventDefault();
 
     if (itemToAdd) {
-      const newItem = { id: uuidv4(), text: itemToAdd };
+      const newItem = { id: uuidv4(), text: itemToAdd, completed: false };
       setItems([...items, newItem]);
       setItemToAdd("");
     }
+  };
+
+  const toggleComplete = (id, bool) => {
+    const newItems = items.map((item) => {
+      if (item.id === id) {
+        return { ...item, completed: bool };
+      }
+      return item;
+    });
+    setItems(newItems);
   };
 
   const deleteItem = (id) => {
@@ -57,7 +67,12 @@ const GroceryContainer = () => {
         ) : (
           items.map((item) => {
             return (
-              <SingleItem key={item.id} deleteItem={deleteItem} {...item} />
+              <SingleItem
+                key={item.id}
+                deleteItem={deleteItem}
+                toggleComplete={toggleComplete}
+                {...item}
+              />
             );
           })
         )}

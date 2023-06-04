@@ -1,14 +1,11 @@
-import { useState } from "react";
 import "./singleItem.css";
 
-const SingleItem = ({ id, text, deleteItem }) => {
-  const [completed, setCompleted] = useState(false);
-
+const SingleItem = ({ id, text, completed, deleteItem, toggleComplete }) => {
   return (
     <li>
       <span
         className={completed ? "completed" : ""}
-        onClick={() => setCompleted(!completed)}
+        onClick={() => toggleComplete(id, !completed)}
       >
         {text}
       </span>
