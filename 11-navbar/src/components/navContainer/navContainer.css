@@ -1,0 +1,123 @@
+nav {
+  background-color: #fff;
+}
+
+.container {
+  width: 70%;
+  max-width: 1500px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.nav-header {
+  padding: 2rem 0;
+  font-size: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-header button {
+  display: none;
+  border: none;
+  background-color: transparent;
+  color: #87ceeb;
+  font-size: 2.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+li {
+  list-style: none;
+  transition: 0.3s;
+}
+
+.nav-container {
+  transition: 0.3s;
+}
+
+.nav-list,
+.social-list {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 2rem;
+}
+
+.social-list svg {
+  color: #87ceeb;
+}
+
+ul li:hover {
+  opacity: 0.8;
+}
+
+/* *************************************** */
+/* Media Style */
+/* *************************************** */
+/* Default work done at 2560px */
+
+/* Extra Large 1729px ~ 1920px */
+@media only screen and (max-width: 1920px) {
+}
+
+/* Large laptop to Desktop: 1324px ~ 1728px */
+@media only screen and (max-width: 1728px) {
+}
+
+/* Medium Tablet to Laptop: 848px ~ 1323px */
+@media only screen and (max-width: 1323px) {
+}
+
+/* Small Phone to Tablet: 403px ~ 847px */
+@media only screen and (max-width: 847px) {
+  .container {
+    display: block;
+    width: 85%;
+  }
+
+  .nav-header button {
+    display: inline-block;
+  }
+
+  .nav-container {
+    overflow: hidden;
+    height: 0;
+  }
+
+  .nav-list {
+    display: block;
+  }
+
+  .nav-list li {
+    padding: 1rem 0;
+  }
+
+  .nav-list li:hover {
+    padding-left: 1.5rem;
+    background-color: #87ceeb;
+  }
+
+  .nav-list li:hover a {
+    color: #136d91;
+  }
+
+  .social-list {
+    display: none;
+  }
+}
+
+/* Extra small phone to Phone: 0px ~ 402px */
+@media only screen and (max-width: 402px) {
+}
+
+@media only screen and (min-width: 848px) {
+  .nav-container {
+    height: auto !important;
+  }
+}
